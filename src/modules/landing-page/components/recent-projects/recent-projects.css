@@ -1,0 +1,12 @@
+.card {
+    transition: filter 0.4s ease, transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.10) translateZ(0);
+}
+
+.card-grid:hover > .card:not(:hover) {
+    transform: scale(0.95) translateZ(0);
+    /* filter: brightness(0.7) saturate(1) contrast(1) blur(2px); */
+}

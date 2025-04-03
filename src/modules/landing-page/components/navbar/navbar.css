@@ -1,0 +1,35 @@
+.menu-link {
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 100%;
+    align-content: center;
+}
+
+.menu-link:hover {
+    background-color: #d3d3ff;
+    color: #6b6bcd;
+    border-radius: 4px;
+    font-weight: 600;
+    /* background-color: #ececfa;
+    color: #8381f5; */
+}
+
+.collapsible-link {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.collapsible-link:hover {
+    background-color: rgb(255, 185, 55);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.collapsible-link:hover a {
+    color: white;
+    font-weight: 600;
+}
