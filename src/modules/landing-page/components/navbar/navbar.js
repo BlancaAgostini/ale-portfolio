@@ -43,7 +43,7 @@ export const Navbar = () => {
                         <Link className='menu-link' href='#' underline='none' sx={{ color: 'gray' }}>About</Link>
                         <Link className='menu-link' href='#' underline='none' sx={{ color: 'gray' }}>Portfolio</Link>
                         <Link className='menu-link' href='#' underline='none' sx={{ color: 'gray' }}>Blog</Link>
-                        <Link className='menu-link' href='#' underline='none' sx={{ color: 'gray' }}>Contact</Link>
+                        <Link className='menu-link' href='/contact' underline='none' sx={{ color: 'gray' }}>Contact</Link>
                         <Link className='menu-link' href='#' underline='none' sx={{ color: 'gray' }}>
                             <FontAwesomeIcon icon={faLinkedin} size="2x" />
                         </Link>
@@ -71,7 +71,7 @@ export const Navbar = () => {
                     </Box>
 
                     <Box className='collapsible-link'>
-                        <Link href='#' underline='none'>Contact</Link>
+                        <Link href='/contact.js' underline='none'>Contact</Link>
                     </Box>
 
                     <div class="collapsible-link">

@@ -6,14 +6,8 @@ import { Footer } from "../components/footer/footer";
 
 export const LandingPage = () => {
     return (
-        <Box sx={styles.mainContainer}>
-            <Navbar></Navbar>
-
-            <Box sx={styles.recentProjectsContainer}>
-                <RecentProjects></RecentProjects>
-            </Box>
-
-            <Footer></Footer>
+        <Box sx={styles.recentProjectsContainer}>
+            <RecentProjects></RecentProjects>
         </Box>
     );
 }
