@@ -1,6 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 import { createTheme } from '@mui/material/styles';
+import { Routes, Route } from 'react-router-dom';
+import { LandingPage } from './modules/landing-page/pages/landing-page';
+import { Contact } from './modules/contact/pages/contact';
+import { Box } from "@mui/material";
+import { Navbar } from './modules/landing-page/components/navbar/navbar';
+import { Footer } from './modules/landing-page/components/footer/footer';
 
 const theme = createTheme({
   palette: {
@@ -21,23 +26,27 @@ const theme = createTheme({
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+        <Box sx={styles.mainContainer}>
+            <Navbar></Navbar>
+            
+            <Routes>
+                <Route path="/" element={<LandingPage />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+
+            <Footer></Footer>
+        </Box>
+    </>
   );
 }
 
 export default App;
+
+export const styles = {
+    mainContainer: {
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh'
+    }
+}
